@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<body>
+
+<div id="app">
+    <button v-on:click = "displaynumbers">Click Me to Add No.</button>
+<!--    <button @click = "displaynumbers">Click ME</button>-->
+    <h2> Add Number 100 + 200 = {{total}}</h2>
+</div>
+
+<script>
+    let vueObject = new Vue({
+        el: "#app",
+        data: {
+            num1: 50,
+            num2 : 100,
+            total : ''
+        },
+        methods : {
+            displaynumbers : function(event) {
+                console.log(event);
+                return thisthis.total =  this.num1+ this.num2;
+            }
+        },
+    })
+</script>
+
+</body>
+</html>
